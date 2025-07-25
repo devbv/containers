@@ -25,6 +25,7 @@ declare -a cmd=(
     "-e" "$DISCOURSE_ENV"
     "-p" "$DISCOURSE_PORT_NUMBER"
     "--spawn-method" "$DISCOURSE_PASSENGER_SPAWN_METHOD"
+    "--nginx-config-template" "/opt/bitnami/conf/nginx-config.erb" 
 )
 
 # Append extra flags specified via environment variables
